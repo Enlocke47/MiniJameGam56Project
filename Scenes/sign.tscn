@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://vh17vcva2la2"]
+
+[ext_resource type="Script" uid="uid://f1sjd0l1wvk7" path="res://Scenes/sign.gd" id="1_fmf1u"]
+
+[node name="Sign" type="Node2D" unique_id=1091682053]
+script = ExtResource("1_fmf1u")
+
+[node name="Button" type="Button" parent="." unique_id=1577039180]
+offset_left = -6.0
+offset_top = -7.0
+offset_right = 6.0
+offset_bottom = 6.0
+flat = true
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

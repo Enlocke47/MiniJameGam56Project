@@ -1,0 +1,620 @@
+[gd_scene format=4 uid="uid://bd2y5wvhico26"]
+
+[ext_resource type="Script" uid="uid://dkbcumyhkr22w" path="res://Scenes/main.gd" id="1_6bp64"]
+[ext_resource type="Texture2D" uid="uid://c27rlg822jyvx" path="res://assets/Tileset Spring.png" id="3_6bp64"]
+[ext_resource type="Script" uid="uid://bd2tkjt7nlxdo" path="res://Scenes/crate_sell.gd" id="4_ynf5e"]
+[ext_resource type="PackedScene" uid="uid://cn0m62fhs5tre" path="res://Scenes/crate_sell.tscn" id="5_ynf5e"]
+[ext_resource type="PackedScene" uid="uid://vh17vcva2la2" path="res://Scenes/sign.tscn" id="6_6bp64"]
+[ext_resource type="PackedScene" uid="uid://ponr3pcmwfrq" path="res://Scenes/BigCarrot.tscn" id="6_21xkr"]
+[ext_resource type="FontFile" uid="uid://c4cffqso756jx" path="res://assets/fonts/ari-w9500.ttf" id="6_344ge"]
+[ext_resource type="Texture2D" uid="uid://5cqklf5nsa78" path="res://assets/dollar sign.png" id="6_d1ilt"]
+[ext_resource type="Texture2D" uid="uid://bvhtwt7f3ysj6" path="res://assets/carrot_05.png" id="7_6bp64"]
+[ext_resource type="Texture2D" uid="uid://bhi3rrbcmlwlt" path="res://assets/carrot_sign.png" id="8_6iyac"]
+[ext_resource type="Texture2D" uid="uid://cf3apv3fugg5p" path="res://assets/dollar_pixel_icon.png" id="8_344ge"]
+[ext_resource type="PackedScene" uid="uid://csld2eofxmea8" path="res://Scenes/button_upgrade.tscn" id="12_fdnlq"]
+[ext_resource type="Script" uid="uid://308hayee2t3c" path="res://Scenes/carrot_upgrade_ui.gd" id="12_jkdf5"]
+[ext_resource type="PackedScene" uid="uid://dy8jdn8yxf8i5" path="res://Scenes/upgrade_text.tscn" id="13_jkdf5"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h2yge"]
+texture = ExtResource("3_6bp64")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+10:0/0 = 0
+11:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+8:1/0 = 0
+9:1/0 = 0
+11:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+8:2/0 = 0
+9:2/0 = 0
+10:2/0 = 0
+11:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+8:3/0 = 0
+9:3/0 = 0
+10:3/0 = 0
+11:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+8:4/0 = 0
+9:4/0 = 0
+10:4/0 = 0
+11:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+8:5/0 = 0
+9:5/0 = 0
+11:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+3:6/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+8:6/0 = 0
+10:6/0 = 0
+11:6/0 = 0
+0:7/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+3:7/0 = 0
+4:7/0 = 0
+5:7/0 = 0
+6:7/0 = 0
+7:7/0 = 0
+8:7/0 = 0
+9:7/0 = 0
+10:7/0 = 0
+11:7/0 = 0
+0:8/0 = 0
+1:8/0 = 0
+2:8/0 = 0
+3:8/0 = 0
+4:8/0 = 0
+5:8/0 = 0
+6:8/0 = 0
+7:8/0 = 0
+8:8/0 = 0
+9:8/0 = 0
+10:8/0 = 0
+11:8/0 = 0
+0:9/0 = 0
+1:9/0 = 0
+2:9/0 = 0
+3:9/0 = 0
+4:9/0 = 0
+5:9/0 = 0
+6:9/0 = 0
+7:9/0 = 0
+8:9/0 = 0
+9:9/0 = 0
+11:9/0 = 0
+0:10/0 = 0
+1:10/0 = 0
+2:10/0 = 0
+3:10/0 = 0
+4:10/0 = 0
+5:10/0 = 0
+6:10/0 = 0
+7:10/0 = 0
+8:10/0 = 0
+9:10/0 = 0
+10:10/0 = 0
+11:10/0 = 0
+0:11/0 = 0
+1:11/0 = 0
+2:11/0 = 0
+3:11/0 = 0
+4:11/0 = 0
+5:11/0 = 0
+6:11/0 = 0
+7:11/0 = 0
+8:11/0 = 0
+9:11/0 = 0
+10:11/0 = 0
+11:11/0 = 0
+0:12/0 = 0
+1:12/0 = 0
+2:12/0 = 0
+3:12/0 = 0
+4:12/0 = 0
+5:12/0 = 0
+6:12/0 = 0
+7:12/0 = 0
+8:12/0 = 0
+9:12/0 = 0
+10:12/0 = 0
+11:12/0 = 0
+0:13/0 = 0
+1:13/0 = 0
+2:13/0 = 0
+3:13/0 = 0
+4:13/0 = 0
+5:13/0 = 0
+6:13/0 = 0
+7:13/0 = 0
+8:13/0 = 0
+9:13/0 = 0
+11:13/0 = 0
+0:14/0 = 0
+1:14/0 = 0
+2:14/0 = 0
+3:14/0 = 0
+4:14/0 = 0
+5:14/0 = 0
+6:14/0 = 0
+7:14/0 = 0
+8:14/0 = 0
+9:14/0 = 0
+10:14/0 = 0
+11:14/0 = 0
+0:15/0 = 0
+1:15/0 = 0
+2:15/0 = 0
+3:15/0 = 0
+4:15/0 = 0
+5:15/0 = 0
+6:15/0 = 0
+7:15/0 = 0
+8:15/0 = 0
+9:15/0 = 0
+10:15/0 = 0
+11:15/0 = 0
+0:16/0 = 0
+1:16/0 = 0
+2:16/0 = 0
+3:16/0 = 0
+4:16/0 = 0
+5:16/0 = 0
+6:16/0 = 0
+7:16/0 = 0
+8:16/0 = 0
+9:16/0 = 0
+10:16/0 = 0
+11:16/0 = 0
+0:17/0 = 0
+1:17/0 = 0
+2:17/0 = 0
+3:17/0 = 0
+4:17/0 = 0
+5:17/0 = 0
+6:17/0 = 0
+7:17/0 = 0
+8:17/0 = 0
+9:17/0 = 0
+11:17/0 = 0
+0:18/0 = 0
+1:18/0 = 0
+2:18/0 = 0
+3:18/0 = 0
+4:18/0 = 0
+5:18/0 = 0
+6:18/0 = 0
+7:18/0 = 0
+8:18/0 = 0
+9:18/0 = 0
+10:18/0 = 0
+11:18/0 = 0
+0:19/0 = 0
+1:19/0 = 0
+2:19/0 = 0
+3:19/0 = 0
+4:19/0 = 0
+5:19/0 = 0
+6:19/0 = 0
+7:19/0 = 0
+8:19/0 = 0
+9:19/0 = 0
+10:19/0 = 0
+11:19/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_gqf5e"]
+sources/0 = SubResource("TileSetAtlasSource_h2yge")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1bvp3"]
+texture = ExtResource("3_6bp64")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+10:0/0 = 0
+11:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+8:1/0 = 0
+9:1/0 = 0
+11:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+8:2/0 = 0
+9:2/0 = 0
+10:2/0 = 0
+11:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+8:3/0 = 0
+9:3/0 = 0
+10:3/0 = 0
+11:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+8:4/0 = 0
+9:4/0 = 0
+10:4/0 = 0
+11:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+8:5/0 = 0
+9:5/0 = 0
+11:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+3:6/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+8:6/0 = 0
+10:6/0 = 0
+11:6/0 = 0
+0:7/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+3:7/0 = 0
+4:7/0 = 0
+5:7/0 = 0
+6:7/0 = 0
+7:7/0 = 0
+8:7/0 = 0
+9:7/0 = 0
+10:7/0 = 0
+11:7/0 = 0
+0:8/0 = 0
+1:8/0 = 0
+2:8/0 = 0
+3:8/0 = 0
+4:8/0 = 0
+5:8/0 = 0
+6:8/0 = 0
+7:8/0 = 0
+8:8/0 = 0
+9:8/0 = 0
+10:8/0 = 0
+11:8/0 = 0
+0:9/0 = 0
+1:9/0 = 0
+2:9/0 = 0
+3:9/0 = 0
+4:9/0 = 0
+5:9/0 = 0
+6:9/0 = 0
+7:9/0 = 0
+8:9/0 = 0
+9:9/0 = 0
+11:9/0 = 0
+0:10/0 = 0
+1:10/0 = 0
+2:10/0 = 0
+3:10/0 = 0
+4:10/0 = 0
+5:10/0 = 0
+6:10/0 = 0
+7:10/0 = 0
+8:10/0 = 0
+9:10/0 = 0
+10:10/0 = 0
+11:10/0 = 0
+0:11/0 = 0
+1:11/0 = 0
+2:11/0 = 0
+3:11/0 = 0
+4:11/0 = 0
+5:11/0 = 0
+6:11/0 = 0
+7:11/0 = 0
+8:11/0 = 0
+9:11/0 = 0
+10:11/0 = 0
+11:11/0 = 0
+0:12/0 = 0
+1:12/0 = 0
+2:12/0 = 0
+3:12/0 = 0
+4:12/0 = 0
+5:12/0 = 0
+6:12/0 = 0
+7:12/0 = 0
+8:12/0 = 0
+9:12/0 = 0
+10:12/0 = 0
+11:12/0 = 0
+0:13/0 = 0
+1:13/0 = 0
+2:13/0 = 0
+3:13/0 = 0
+4:13/0 = 0
+5:13/0 = 0
+6:13/0 = 0
+7:13/0 = 0
+8:13/0 = 0
+9:13/0 = 0
+11:13/0 = 0
+0:14/0 = 0
+1:14/0 = 0
+2:14/0 = 0
+3:14/0 = 0
+4:14/0 = 0
+5:14/0 = 0
+6:14/0 = 0
+7:14/0 = 0
+8:14/0 = 0
+9:14/0 = 0
+10:14/0 = 0
+11:14/0 = 0
+0:15/0 = 0
+1:15/0 = 0
+2:15/0 = 0
+3:15/0 = 0
+4:15/0 = 0
+5:15/0 = 0
+6:15/0 = 0
+7:15/0 = 0
+8:15/0 = 0
+9:15/0 = 0
+10:15/0 = 0
+11:15/0 = 0
+0:16/0 = 0
+1:16/0 = 0
+2:16/0 = 0
+3:16/0 = 0
+4:16/0 = 0
+5:16/0 = 0
+6:16/0 = 0
+7:16/0 = 0
+8:16/0 = 0
+9:16/0 = 0
+10:16/0 = 0
+11:16/0 = 0
+0:17/0 = 0
+1:17/0 = 0
+2:17/0 = 0
+3:17/0 = 0
+4:17/0 = 0
+5:17/0 = 0
+6:17/0 = 0
+7:17/0 = 0
+8:17/0 = 0
+9:17/0 = 0
+11:17/0 = 0
+0:18/0 = 0
+1:18/0 = 0
+2:18/0 = 0
+3:18/0 = 0
+4:18/0 = 0
+5:18/0 = 0
+6:18/0 = 0
+7:18/0 = 0
+8:18/0 = 0
+9:18/0 = 0
+10:18/0 = 0
+11:18/0 = 0
+0:19/0 = 0
+1:19/0 = 0
+2:19/0 = 0
+3:19/0 = 0
+4:19/0 = 0
+5:19/0 = 0
+6:19/0 = 0
+7:19/0 = 0
+8:19/0 = 0
+9:19/0 = 0
+10:19/0 = 0
+11:19/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_in1x4"]
+sources/0 = SubResource("TileSetAtlasSource_1bvp3")
+
+[sub_resource type="LabelSettings" id="LabelSettings_in1x4"]
+font = ExtResource("6_344ge")
+font_size = 12
+outline_size = 1
+shadow_size = 4
+shadow_color = Color(0.32941177, 0.32941177, 0.32941177, 0.6901961)
+
+[node name="Main" type="Node2D" unique_id=763486584]
+script = ExtResource("1_6bp64")
+
+[node name="Grass" type="TileMapLayer" parent="." unique_id=1984919186]
+tile_map_data = PackedByteArray("AAAMAAMAAAAJAAIAAAAMAAQAAAAJAAIAAAAMAAUAAAAJAAIAAAAMAAYAAAAJAAIAAAANAAMAAAAJAAIAAAANAAQAAAAJAAIAAAANAAUAAAAJAAIAAAANAAYAAAAJAAIAAAAOAAMAAAAJAAIAAAAOAAQAAAAJAAIAAAAOAAUAAAAJAAIAAAAOAAYAAAAJAAIAAAAPAAMAAAAJAAIAAAAPAAQAAAAJAAIAAAAPAAUAAAAJAAIAAAAPAAYAAAAJAAIAAAAQAAMAAAAJAAIAAAAQAAQAAAAJAAIAAAAQAAUAAAAJAAIAAAAQAAYAAAAJAAIAAAAMAAcAAAAJAAIAAAANAAcAAAAJAAIAAAAOAAcAAAAJAAIAAAAPAAcAAAAJAAIAAAAQAAcAAAAJAAIAAAABAAEAAAAJAAIAAAABAAIAAAAJAAIAAAABAAMAAAAJAAIAAAABAAQAAAAJAAIAAAABAAUAAAAJAAIAAAABAAYAAAAJAAIAAAABAAcAAAAJAAIAAAABAAgAAAAJAAIAAAABAAkAAAAJAAIAAAABAAoAAAAJABIAAAACAAEAAAAJAAIAAAACAAIAAAAJAAIAAAACAAMAAAAJAAIAAAACAAQAAAAJAAIAAAACAAUAAAAJAAIAAAACAAYAAAAJAAIAAAACAAcAAAAJAAIAAAACAAgAAAAJAAIAAAACAAkAAAAJAAIAAAACAAoAAAAJABIAAAADAAEAAAAJAAIAAAADAAIAAAAJAAIAAAADAAMAAAAJAAIAAAADAAQAAAAJAAIAAAADAAUAAAAJAAIAAAADAAYAAAAJAAIAAAADAAcAAAAJAAIAAAADAAgAAAAJAAIAAAADAAkAAAAJAAIAAAADAAoAAAAJABIAAAAEAAEAAAAJAAIAAAAEAAIAAAAJAAIAAAAEAAMAAAAJAAIAAAAEAAQAAAAJAAIAAAAEAAUAAAAJAAIAAAAEAAYAAAAJAAIAAAAEAAcAAAAJAAIAAAAEAAgAAAAJAAIAAAAEAAkAAAAJAAIAAAAEAAoAAAAJABIAAAAFAAEAAAAJAAIAAAAFAAIAAAAJAAIAAAAFAAMAAAAJAAIAAAAFAAQAAAAJAAIAAAAFAAUAAAAJAAIAAAAFAAYAAAAJAAIAAAAFAAcAAAAJAAIAAAAFAAgAAAAJAAIAAAAFAAkAAAAJAAIAAAAFAAoAAAAJABIAAAAGAAEAAAAJAAIAAAAGAAIAAAAJAAIAAAAGAAMAAAAJAAIAAAAGAAQAAAAJAAIAAAAGAAUAAAAJAAIAAAAGAAYAAAAJAAIAAAAGAAcAAAAJAAIAAAAGAAgAAAAJAAIAAAAGAAkAAAAJAAIAAAAGAAoAAAAJABIAAAAHAAEAAAAJAAIAAAAHAAIAAAAJAAIAAAAHAAMAAAAJAAIAAAAHAAQAAAAJAAIAAAAHAAUAAAAJAAIAAAAHAAYAAAAJAAIAAAAHAAcAAAAJAAIAAAAHAAgAAAAJAAIAAAAHAAkAAAAJAAIAAAAHAAoAAAAJABIAAAAIAAEAAAAJAAIAAAAIAAIAAAAJAAIAAAAIAAMAAAAJAAIAAAAIAAQAAAAJAAIAAAAIAAUAAAAJAAIAAAAIAAYAAAAJAAIAAAAIAAcAAAAJAAIAAAAIAAgAAAAJAAIAAAAIAAkAAAAJAAIAAAAIAAoAAAAJABIAAAAJAAEAAAAJAAIAAAAJAAIAAAAJAAIAAAAJAAMAAAAJAAIAAAAJAAQAAAAJAAIAAAAJAAUAAAAJAAIAAAAJAAYAAAAJAAIAAAAJAAcAAAAJAAIAAAAJAAgAAAAJAAIAAAAJAAkAAAAJAAIAAAAJAAoAAAAJABIAAAAKAAEAAAAJAAIAAAAKAAIAAAAJAAIAAAAKAAMAAAAJAAIAAAAKAAQAAAAJAAIAAAAKAAUAAAAJAAIAAAAKAAYAAAAJAAIAAAAKAAcAAAAJAAIAAAAKAAgAAAAJAAIAAAAKAAkAAAAJAAIAAAAKAAoAAAAJABIAAAALAAEAAAAJAAIAAAALAAIAAAAJAAIAAAALAAMAAAAJAAIAAAALAAQAAAAJAAIAAAALAAUAAAAJAAIAAAALAAYAAAAJAAIAAAALAAcAAAAJAAIAAAALAAgAAAAJAAIAAAALAAkAAAAJAAIAAAALAAoAAAAJABIAAAAMAAEAAAAJAAIAAAAMAAIAAAAJAAIAAAAMAAgAAAAJAAIAAAAMAAkAAAAJAAIAAAAMAAoAAAAJABIAAAANAAEAAAAJAAIAAAANAAIAAAAJAAIAAAANAAgAAAAJAAIAAAANAAkAAAAJAAIAAAANAAoAAAAJABIAAAAOAAEAAAAJAAIAAAAOAAIAAAAJAAIAAAAOAAgAAAAJAAIAAAAOAAkAAAAJAAIAAAAOAAoAAAAJABIAAAAPAAEAAAAJAAIAAAAPAAIAAAAJAAIAAAAPAAgAAAAJAAIAAAAPAAkAAAAJAAIAAAAPAAoAAAAJABIAAAAQAAEAAAAJAAIAAAAQAAIAAAAJAAIAAAAQAAgAAAAJAAIAAAAQAAkAAAAJAAIAAAAQAAoAAAAJABIAAAARAAEAAAAJAAIAAAARAAIAAAAJAAIAAAARAAMAAAAJAAIAAAARAAQAAAAJAAIAAAARAAUAAAAJAAIAAAARAAYAAAAJAAIAAAARAAcAAAAJAAIAAAARAAgAAAAJAAIAAAARAAkAAAAJAAIAAAARAAoAAAAJABIAAAASAAEAAAAJAAIAAAASAAIAAAAJAAIAAAASAAMAAAAJAAIAAAASAAQAAAAJAAIAAAASAAUAAAAJAAIAAAASAAYAAAAJAAIAAAASAAcAAAAJAAIAAAASAAgAAAAJAAIAAAASAAkAAAAJAAIAAAASAAoAAAAJABIAAAATAAEAAAAJABIAAAATAAIAAAAJABIAAAATAAMAAAAJABIAAAATAAQAAAAJABIAAAATAAUAAAAJABIAAAATAAYAAAAJABIAAAATAAcAAAAJABIAAAATAAgAAAAJABIAAAATAAkAAAAJABIAAAATAAoAAAAJABIAAAAAAAAAAAAJABIAAAAAAAEAAAAJABIAAAAAAAIAAAAJABIAAAAAAAMAAAAJABIAAAAAAAQAAAAJABIAAAAAAAUAAAAJABIAAAAAAAYAAAAJABIAAAAAAAcAAAAJABIAAAAAAAgAAAAJABIAAAAAAAkAAAAJABIAAAAAAAoAAAAJABIAAAABAAAAAAAJABIAAAACAAAAAAAJABIAAAADAAAAAAAJABIAAAAEAAAAAAAJABIAAAAFAAAAAAAJABIAAAAGAAAAAAAJABIAAAAHAAAAAAAJABIAAAAIAAAAAAAJABIAAAAJAAAAAAAJABIAAAAKAAAAAAAJABIAAAALAAAAAAAJABIAAAAMAAAAAAAJABIAAAANAAAAAAAJABIAAAAOAAAAAAAJABIAAAAPAAAAAAAJABIAAAAQAAAAAAAJABIAAAARAAAAAAAJABIAAAASAAAAAAAJABIAAAATAAAAAAAJABIAAAAUAAAAAAAJABIAAAAUAAEAAAAJABIAAAAUAAIAAAAJABIAAAAUAAMAAAAJABIAAAAUAAQAAAAJABIAAAAUAAUAAAAJABIAAAAUAAYAAAAJABIAAAAUAAcAAAAJABIAAAAUAAgAAAAJABIAAAAUAAkAAAAJABIAAAAUAAoAAAAJABIAAAAAAAsAAAAJABIAAAABAAsAAAAJABIAAAACAAsAAAAJABIAAAADAAsAAAAJABIAAAAEAAsAAAAJABIAAAAFAAsAAAAJABIAAAAGAAsAAAAJABIAAAAHAAsAAAAJABIAAAAIAAsAAAAJABIAAAAJAAsAAAAJABIAAAAKAAsAAAAJABIAAAALAAsAAAAJABIAAAAMAAsAAAAJABIAAAANAAsAAAAJABIAAAAOAAsAAAAJABIAAAAPAAsAAAAJABIAAAAQAAsAAAAJABIAAAARAAsAAAAJABIAAAASAAsAAAAJABIAAAATAAsAAAAJABIAAAAUAAsAAAAJABIAAAA=")
+tile_set = SubResource("TileSet_gqf5e")
+
+[node name="Soil" type="TileMapLayer" parent="." unique_id=2017334547]
+tile_map_data = PackedByteArray("AAAHAAMAAAAIAAgAAAAHAAQAAAAIAAkAAAAHAAUAAAAIAAkAAAAHAAYAAAAIAAkAAAAHAAcAAAAIAAsAAAAIAAMAAAAKAAgAAAAIAAQAAAAJAAoAAAAIAAUAAAAJAAoAAAAIAAYAAAAJAAoAAAAIAAcAAAAJAAsAAAAJAAMAAAAKAAgAAAAJAAQAAAAJAAoAAAAJAAUAAAAJAAoAAAAJAAYAAAAJAAoAAAAJAAcAAAAJAAsAAAAKAAMAAAAKAAgAAAAKAAQAAAAJAAoAAAAKAAUAAAAJAAoAAAAKAAYAAAAJAAoAAAAKAAcAAAAJAAsAAAALAAMAAAALAAgAAAALAAQAAAALAAoAAAALAAUAAAALAAoAAAALAAYAAAALAAoAAAALAAcAAAALAAsAAAA=")
+tile_set = SubResource("TileSet_in1x4")
+
+[node name="CrateSell" parent="." unique_id=888867595 instance=ExtResource("5_ynf5e")]
+position = Vector2(148, 151)
+script = ExtResource("4_ynf5e")
+
+[node name="Chest_Button" type="Button" parent="CrateSell" unique_id=737817411]
+offset_left = -9.0
+offset_top = -5.0
+offset_right = 8.0
+offset_bottom = 8.0
+flat = true
+metadata/_edit_use_anchors_ = true
+
+[node name="DollarSign" parent="." unique_id=1091682053 instance=ExtResource("6_6bp64")]
+position = Vector2(164, 151)
+
+[node name="Sprite2D" type="Sprite2D" parent="DollarSign" unique_id=1735816640]
+texture = ExtResource("6_d1ilt")
+
+[node name="BigCarrot" parent="." unique_id=842306474 instance=ExtResource("6_21xkr")]
+position = Vector2(151, 109)
+
+[node name="CarrotSign" parent="." unique_id=1191181855 instance=ExtResource("6_6bp64")]
+position = Vector2(201, 117)
+
+[node name="Sprite2D" type="Sprite2D" parent="CarrotSign" unique_id=1334115465]
+texture = ExtResource("8_6iyac")
+
+[node name="Currencies" type="Control" parent="." unique_id=627195102]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 256.0
+offset_right = 320.0
+offset_bottom = 16.0
+
+[node name="carrots_number" type="Label" parent="Currencies" unique_id=1680963950]
+layout_mode = 0
+offset_left = -28.0
+offset_right = 64.0
+offset_bottom = 21.0
+text = "0"
+label_settings = SubResource("LabelSettings_in1x4")
+vertical_alignment = 1
+
+[node name="dollar_number" type="Label" parent="Currencies" unique_id=968925459]
+layout_mode = 0
+offset_left = -159.0
+offset_right = -67.0
+offset_bottom = 21.0
+text = "0"
+label_settings = SubResource("LabelSettings_in1x4")
+vertical_alignment = 1
+
+[node name="CarrotIcon" type="TextureRect" parent="Currencies" unique_id=10040258]
+layout_mode = 0
+offset_left = -48.0
+offset_right = -32.0
+offset_bottom = 16.0
+texture = ExtResource("7_6bp64")
+
+[node name="DollarIcon" type="TextureRect" parent="Currencies" unique_id=546152780]
+layout_mode = 0
+offset_left = -180.0
+offset_right = -164.0
+offset_bottom = 16.0
+texture = ExtResource("8_344ge")
+
+[node name="Carrot_Upgrade_UI" type="Control" parent="." unique_id=1258854685]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 212.0
+offset_top = 65.0
+offset_right = 212.0
+offset_bottom = 65.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.5, 0.5)
+script = ExtResource("12_jkdf5")
+
+[node name="DpCButtonUpgrade" parent="Carrot_Upgrade_UI" unique_id=737879093 instance=ExtResource("12_fdnlq")]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 76.0
+offset_right = 136.0
+offset_bottom = 98.0
+
+[node name="UpgradeInfo" parent="Carrot_Upgrade_UI" unique_id=1189078394 instance=ExtResource("13_jkdf5")]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 42.0
+offset_right = 144.0
+offset_bottom = 76.0
+
+[node name="UpgradeTitle" parent="Carrot_Upgrade_UI" unique_id=1476800868 instance=ExtResource("13_jkdf5")]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 2.0
+offset_right = 144.0
+offset_bottom = 42.0
+
+[connection signal="button_down" from="CrateSell/Chest_Button" to="CrateSell" method="_on_chest_button_button_down"]
+[connection signal="button_up" from="CrateSell/Chest_Button" to="CrateSell" method="_on_chest_button_button_up"]
+[connection signal="pressed" from="CrateSell/Chest_Button" to="." method="_on_chest_button_pressed"]
+[connection signal="pressed" from="Carrot_Upgrade_UI/DpCButtonUpgrade" to="." method="_on_button_upgrade_pressed"]

@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://csld2eofxmea8"]
+
+[ext_resource type="FontFile" uid="uid://c4cffqso756jx" path="res://assets/fonts/ari-w9500.ttf" id="1_yom6e"]
+
+[node name="ButtonUpgrade" type="Button" unique_id=737879093]
+offset_left = 201.0
+offset_top = 90.0
+offset_right = 314.0
+offset_bottom = 112.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=23247608]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.010204081
+offset_left = 1.0
+offset_top = 3.0
+offset_right = 111.84694
+offset_bottom = 19.0
+mouse_filter = 2
+theme_override_fonts/normal_font = ExtResource("1_yom6e")
+theme_override_font_sizes/normal_font_size = 10
+bbcode_enabled = true
+text = "1 [img]res://assets/dollar_pixel_icon.png[/img]"
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1

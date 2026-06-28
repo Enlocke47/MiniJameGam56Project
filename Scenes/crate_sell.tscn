@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://cn0m62fhs5tre"]
+
+[ext_resource type="Texture2D" uid="uid://drjc5yox2bdrf" path="res://assets/chest.png" id="1_38f50"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r28mu"]
+atlas = ExtResource("1_38f50")
+region = Rect2(0, 0, 32, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xwjsa"]
+atlas = ExtResource("1_38f50")
+region = Rect2(0, 16, 32, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_in1x4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r28mu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xwjsa")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="CrateSell" type="Node2D" unique_id=888867595]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2007741299]
+sprite_frames = SubResource("SpriteFrames_in1x4")

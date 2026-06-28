@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://c3ejhg1eu32md"]
+
+[ext_resource type="Script" uid="uid://dernb7e6bybtl" path="res://Scripts/soil_slot.gd" id="1_yj5j8"]
+[ext_resource type="Texture2D" uid="uid://dni6m7rus0xlb" path="res://assets/DirtTileSet.png" id="2_2wgci"]
+
+[node name="SoilSlot" type="Node2D" unique_id=627407068]
+script = ExtResource("1_yj5j8")
+
+[node name="Button" type="Button" parent="." unique_id=524710654]
+offset_left = -64.0
+offset_top = -64.0
+offset_right = 64.0
+offset_bottom = 64.0
+icon = ExtResource("2_2wgci")
+flat = true
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

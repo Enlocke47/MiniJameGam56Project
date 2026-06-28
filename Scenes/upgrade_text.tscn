@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://dy8jdn8yxf8i5"]
+
+[ext_resource type="FontFile" uid="uid://c4cffqso756jx" path="res://assets/fonts/ari-w9500.ttf" id="1_rw5se"]
+
+[node name="UpgradeText" type="Panel" unique_id=1189078394]
+offset_left = 183.0
+offset_top = 31.0
+offset_right = 313.0
+offset_bottom = 71.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=1124419853]
+layout_mode = 0
+offset_right = 130.0
+offset_bottom = 40.0
+theme_override_fonts/normal_font = ExtResource("1_rw5se")
+theme_override_font_sizes/normal_font_size = 10
+bbcode_enabled = true
+text = "Increase [img]res://assets/dollar_pixel_icon.png[/img] per [img]res://assets/carrot_05.png[/img] "
+fit_content = true
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1

@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://ponr3pcmwfrq"]
+
+[ext_resource type="Texture2D" uid="uid://5scsj3xayyid" path="res://assets/carrot_04.png" id="1_8uj3h"]
+[ext_resource type="Script" uid="uid://cngpd1qqteyqm" path="res://Scenes/big_carrot.gd" id="1_48rc3"]
+
+[node name="BigCarrot" type="Node2D" unique_id=842306474]
+script = ExtResource("1_48rc3")
+
+[node name="Button" type="Button" parent="." unique_id=2035070829]
+offset_left = -25.0
+offset_top = -66.0
+offset_right = 25.0
+offset_bottom = -1.0
+flat = true
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1882314369]
+position = Vector2(2.842171e-14, -32.999996)
+scale = Vector2(5, 5)
+texture = ExtResource("1_8uj3h")
+
+[connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
+[connection signal="button_up" from="Button" to="." method="_on_button_button_up"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

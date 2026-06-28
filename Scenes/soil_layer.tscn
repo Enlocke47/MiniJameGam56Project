@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://bbpetgulstb1p"]
+
+[ext_resource type="PackedScene" uid="uid://c3ejhg1eu32md" path="res://Scenes/soil_slot.tscn" id="1_62rs5"]
+[ext_resource type="Script" uid="uid://bh5knqfaswtf" path="res://Scripts/spawn_cell.gd" id="2_23yb4"]
+
+[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_0xm2m"]
+scenes/0/scene = ExtResource("1_62rs5")
+
+[sub_resource type="TileSet" id="TileSet_htk3f"]
+tile_size = Vector2i(128, 128)
+sources/0 = SubResource("TileSetScenesCollectionSource_0xm2m")
+
+[node name="SoilLayer" type="TileMapLayer" unique_id=117051157]
+visible = false
+tile_set = SubResource("TileSet_htk3f")
+script = ExtResource("2_23yb4")
